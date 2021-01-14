@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Recorder in Javascript</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  </head>
+  <body>
+    <div id="container">
+      <video id="recorded" playsinline loop></video>
+
+      <div>
+        <button id="download" >Download</button>
+      </div>
+
+      <div>
+        <h4>Media Stream Constraints options</h4>
+        <p>
+          Echo cancellation: <input type="checkbox" id="echoCancellation" />
+        </p>
+      </div>
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script><!-- {{ url_for('static', filename='recorder.js') }} -->
+</html>
